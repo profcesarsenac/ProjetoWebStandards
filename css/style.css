@@ -1,5 +1,24 @@
+@font-face{
+    font-family: "Poppins-Regular";
+    src:
+        local("Poppins-Regular"),
+        url("../assets/fonts/poppins-regular/Poppins-Regular.ttf") format("truetype"),
+        url("../assets/fonts/poppins-regular/Poppins-Regular.woff") format("woff"),
+        url("../assets/fonts/poppins-regular/Poppins-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: 
+        local("Roboto-Regular"),
+        url("../assets/fonts/roboto-regular/Roboto-Regular.ttf") format("truetype"),
+        url("../assets/fonts/roboto-regular/Roboto-Regular.woff") format("woff"),
+        url("../assets/fonts/roboto-regular/Roboto-Regular.woff2") format("woff2");
+}
+
 body{
     margin: 0 0;
+    font-family: "Roboto-Regular";
 }
 
 #backgroundImage{
@@ -25,6 +44,11 @@ body{
     z-index: -1;
 }
 
+nav img{
+    width: 80vh;
+    opacity: 0.7;
+}
+
 #conteudo{
     width: 50vh;
     height: 50vh;
@@ -33,3 +57,124 @@ body{
     background: linear-gradient(180deg, rgba(119,121,245,1) 0%, rgba(168,56,229,1) 100%);
     box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.75);
 }
+
+#conteudo p{
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF;
+}
+
+.imageUsuario{
+    font-size: 6vh;
+    color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8vh auto auto auto;
+    background-color: #FFF;
+    width: 12vh;
+    height: 12vh;
+    border-radius: 50%;
+}
+
+input[type="text"], input[type="password"]{
+    font-family: "Poppins-Regular";
+    color: #000000;
+    font-size: 16px;
+    display: block;
+    width: 75%;
+    border-radius: 6px;
+    background: transparent;
+    margin: 2vh auto;
+    border: 1px solid #fff;
+    text-align: center;
+    height: 45px;
+}
+
+input[type="text"]:hover, input[type="password"]:hover{
+    background-color: ghostwhite;
+}
+
+input[type="text"]::placeholder, input[type="password"]::placeholder{
+    color: #fff;
+    opacity: 0.8;
+}
+
+input[type="text"]:hover::placeholder, input[type="password"]:hover::placeholder{
+    color: #000;
+}
+
+.grupoBotoes{
+    margin: 6vh 4vh 0 4vh;
+}
+
+.botaoPadrao{
+    font-family: "Roboto-Regular";
+    color: #000;
+    border-color: #FFF;
+    text-align: center;
+    width: 20vh;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+}
+
+.botaoPadrao:hover{
+    background-color: ghostwhite;
+    border-color: #B3B3B3;
+    opacity: 0.8;
+}
+
+.botaoLimpar{
+    background-color: #C291E8;
+    border-color: #C291E8;
+    color: #FFF;
+}
+
+.botaoLimpar:hover{
+    background-color: #422A91;
+    border-color: #422A91;
+}
+
+.botaoEntrar{
+    background-color: #4351E8;
+    border-color: #4351E8;
+    color: #FFF;
+}
+
+.botaoEntrar:hover{
+    background-color: #212873;
+    border-color: #212873;
+}
+
+/* INICIO - CONTEUDO CALCULADORA */
+
+.conteudoCalculadora{
+    height: 56vh !important;
+}
+
+.botaoCalculadora{
+    color: #FFFFFF;
+    width: 9vh;
+    height: 9vh;
+    background-color: #76C4F5;
+    border: 1px solid #76C4F5;
+    margin: 1vh;
+    box-shadow: 1px 1px #000;
+    font-size: xx-large;
+}
+
+.botaoCalculadora:hover{
+    background-color: #5995BA;
+    border: 1px solid #5995BA;
+}
+
+.grupoBotoesCalculadora{
+    padding: 0 2.3vh;
+}
+
+.inputVisorCalculadora{
+    width: 86% !important;
+}
+
+/* FIM - CONTEUDO CALCULADORA */
