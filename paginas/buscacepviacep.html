@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index | Projeto Web Standards</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/menu.css">
+    <link rel="stylesheet" type="text/css" href="../assets/fontawesome/css/all.min.css">    
+</head>
+<body>    
+    <div id="cssmenu">
+        <ul>
+            <li><span><a href="principal.html">Home</a></span></li>
+            <li>
+                <span>Aplicativos <i class="arrow"></i></span>
+                <div class="dropdown">
+                    <div class="dropdownItens">
+                        <a href="calculadora.html"> Calculadora</a>
+                        <a href="buscacepviacep.html"> Busca CEP (REST)</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <span>Equipe <i class="arrow"></i></span>
+                <div class="dropdown">
+                    <div class="dropdownItens">
+                        <a href="#"> Jardel Gomes</a>
+                        <a href="#"> Jamshaid Jamali</a>
+                        <a href="#"> José Lucas</a>
+                        <a href="#"> Rafael Grisi</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <nav id="backgroundImage">
+        <div id="conteudo" class="conteudoCep">
+            <div class="viaCepLogo">
+                <img src="../images/consultar_cep_viacep.jpg" alt="logo-correios-vicep">
+            </div>
+            <div class="grupoLogin">
+                <label for="cep">Digite o CEP a ser procurado</label>
+                <input class="inputsCEPs inputCEP" type="text" name="cep" placeholder="Ex: 12.345-678">
+                <input class="botaoPadrao botaoEntrar botaoBuscarCEP" type="button" name="btnBuscaCep" value="Buscar" onclick="login()">            
+                <input class="botaoPadrao botaoLimpar botaoBuscarCEP" type="button" name="btnBuscaCep" value="Limpar" onclick="login()">            
+
+            </div>
+            <div class="grupoSenha">
+
+                <label for="endereco">Logradouro/Endereço</label>
+                <input class="inputsCEPs inputLogradouro" type="text" name="endereco" placeholder="Ex: Avenida um dois três">
+
+                <label for="complemento">Complemento</label>
+                <input class="inputsCEPs inputComplemento" type="text" name="complemento" placeholder="Ex: Apto, Viela, etc.">
+
+                <label for="numero">Número</label>
+                <input class="inputsCEPs inputNumero" type="text" name="numero" placeholder="Ex: 12, 123, 1234, etc.">
+
+                <label for="bairro">Bairro</label>
+                <input class="inputsCEPs inputBairro" type="text" name="bairro" placeholder="Ex: Vila Feliz, Jardim Bonito, etc.">
+
+                <label for="cidade">Localidade/Cidade</label>
+                <input class="inputsCEPs inputLocalidade" type="text" name="cidade" placeholder="Ex: São Paulo, Rio de Janeiro, etc.">
+
+                <label for="uf">UF</label>
+                <input class="inputsCEPs inputUF" type="text" name="uf" placeholder="Ex: SP, RJ, BA, etc.">
+            </div>
+        </div>
+    </nav>
+</body>
+<script type="text/javascript" src="../js/script.js"></script>
+<script type="text/javascript" src="../assets/fontawesome/js/all.min.js"></script>
+</html>

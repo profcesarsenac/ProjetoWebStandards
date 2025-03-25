@@ -64,6 +64,21 @@ nav img{
     color: #FFF;
 }
 
+.conteudoCep{
+    margin-top: -22vh;
+   min-height: 75vh;
+}
+
+.conteudoCep label {
+    text-transform: none;
+    font-size: small;
+    text-align: left !important;
+    padding-left: 5vh;
+    display: block;
+    margin-bottom: -1.5vh;
+    color: ghostwhite;
+}
+
 .imageUsuario{
     font-size: 6vh;
     color: #333333;
@@ -77,7 +92,7 @@ nav img{
     border-radius: 50%;
 }
 
-input[type="text"], input[type="password"]{
+input[type="text"], input[type="password"], input[type="number"]{
     font-family: "Poppins-Regular";
     color: #000000;
     font-size: 16px;
@@ -89,7 +104,18 @@ input[type="text"], input[type="password"]{
     border: 1px solid #fff;
     text-align: center;
     height: 45px;
+    text-decoration: none;
 }
+
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+input[type="number"]{
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
 
 input[type="text"]:hover, input[type="password"]:hover{
     background-color: ghostwhite;
@@ -147,6 +173,40 @@ input[type="text"]:hover::placeholder, input[type="password"]:hover::placeholder
     border-color: #212873;
 }
 
+.botaoBuscarCEP{
+    height: 22px !important;
+    width: 11.3vh;
+    line-height: 0.5;
+    font-size: smaller;
+}
+
+
+.viaCepLogo img{
+    width: 50vh;
+    margin: 0 auto 1vh 0;
+    display: block;
+    padding: 0;
+}
+
+.viaCepLogo .imgLogoCorreios{
+    width: 50vh;
+    margin: 0 auto;
+    display: block;
+}
+
+.inputsCEPs{
+    height: 22px !important;
+    text-align: left !important;
+    padding-left: 15px !important;
+}
+
+.inputCEP{
+    width: 16vh !important;
+    margin-left: 5vh !important;
+    margin-right: 1vh !important;
+    display: inline !important;
+}
+
 /* INICIO - CONTEUDO CALCULADORA */
 
 .conteudoCalculadora{
@@ -175,6 +235,9 @@ input[type="text"]:hover::placeholder, input[type="password"]:hover::placeholder
 
 .inputVisorCalculadora{
     width: 86% !important;
+    text-align: right !important;
+    font-size: xx-large !important;
+    color: #FFF !important;
 }
 
 /* FIM - CONTEUDO CALCULADORA */
